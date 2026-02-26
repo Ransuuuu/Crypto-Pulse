@@ -11,9 +11,9 @@ export default function Navbar() {
       <div className="max-w-full flex items-center justify-between gap-2 sm:gap-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-1 sm:gap-2 hover:opacity-90 transition-opacity flex-shrink-0 group">
-          <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-[#00ff9f] group-hover:scale-110 transition-transform duration-300" />
+          <Zap className="w-8 h-8 sm:w-10 sm:h-10 text-[#00ff9f] group-hover:scale-110 transition-transform duration-300" />
           <div 
-            className="hidden sm:block text-sm sm:text-lg font-black tracking-[0.08em] py-1 px-2 rounded-md border border-[#00ff9f] border-opacity-40 group-hover:border-opacity-100 group-hover:shadow-lg group-hover:shadow-[#00ff9f]/50 transition-all duration-300"
+            className="hidden sm:block text-base sm:text-xl md:text-2xl lg:text-3xl font-black tracking-[0.08em] py-1 px-2 rounded-md border border-[#00ff9f] border-opacity-40 group-hover:border-opacity-100 group-hover:shadow-lg group-hover:shadow-[#00ff9f]/50 transition-all duration-300"
           >
             <span style={{
               background: 'linear-gradient(90deg, #00ff9f 0%, #ff4d6d 100%)',
@@ -36,8 +36,8 @@ export default function Navbar() {
             }`}
             title="Dashboard"
           >
-            <LayoutDashboard className="w-5 h-5" />
-            <span>Dashboard</span>
+            <LayoutDashboard className="w-6 h-6" />
+            <span className="text-base sm:text-lg">Dashboard</span>
             <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#00ff9f] to-[#ff4d6d] transition-all duration-300 ${
               isActive('/') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
             }`}></div>
@@ -49,8 +49,8 @@ export default function Navbar() {
             }`}
             title="Analysis"
           >
-            <TrendingUp className="w-5 h-5" />
-            <span>Analysis</span>
+            <TrendingUp className="w-6 h-6" />
+            <span className="text-base sm:text-lg">Analysis</span>
             <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#ff4d6d] to-[#ffd700] transition-all duration-300 ${
               isActive('/analysis') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
             }`}></div>
@@ -62,8 +62,8 @@ export default function Navbar() {
             }`}
             title="Settings"
           >
-            <SettingsIcon className="w-5 h-5" />
-            <span>Settings</span>
+            <SettingsIcon className="w-6 h-6" />
+            <span className="text-base sm:text-lg">Settings</span>
             <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#00ff9f] to-[#00d4ff] transition-all duration-300 ${
               isActive('/settings') ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
             }`}></div>
@@ -74,7 +74,7 @@ export default function Navbar() {
         <div className="flex lg:hidden items-center gap-2 ml-auto">
           <Link 
             to="/" 
-            className={`flex items-center justify-center w-10 h-10 rounded-md transition-all ${
+            className={`flex items-center justify-center w-12 h-12 rounded-md transition-all ${
               isActive('/') ? 'bg-[#ff4d6d] bg-opacity-20 text-[#ff4d6d]' : 'text-[#00ff9f] hover:bg-[#00ff9f] hover:bg-opacity-10'
             }`}
             title="Dashboard"
@@ -88,7 +88,7 @@ export default function Navbar() {
             }`}
             title="Analysis"
           >
-            <TrendingUp className="w-5 h-5" />
+            <TrendingUp className="w-6 h-6" />
           </Link>
           <Link 
             to="/settings" 
@@ -97,7 +97,7 @@ export default function Navbar() {
             }`}
             title="Settings"
           >
-            <SettingsIcon className="w-5 h-5" />
+            <SettingsIcon className="w-6 h-6" />
           </Link>
         </div>
       </div>
