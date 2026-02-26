@@ -9,12 +9,20 @@
   }
   .card {
     padding: 16px;
+    width: 100%;
   }
   .btn {
     padding: 6px 12px;
+    width: 100%;
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  input[type="text"] {
+    font-size: 0.9rem;
   }
 }
 
@@ -98,6 +106,8 @@ nav a {
   animation: glow 1.2s infinite alternate;
   font-weight: bold;
   letter-spacing: 1px;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 @keyframes glow {
