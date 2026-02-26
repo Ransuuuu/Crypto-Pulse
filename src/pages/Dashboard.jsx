@@ -32,6 +32,7 @@ export default function Dashboard() {
           className="w-full p-2 bg-gray-800 text-white rounded-lg"
         />
       </div>
+      <h2 className="text-2xl text-neon text-center mb-4">Market Overview</h2>
       <div className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((coin) => (
           <MarketCard key={coin.id} coin={coin} />

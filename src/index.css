@@ -69,6 +69,7 @@ body {
   margin-bottom: 20px;
   transition: .3s;
   text-align: center;
+  box-shadow: 0 0 15px #00ff9f40;
 }
 
 .card:hover {
@@ -84,7 +85,11 @@ body {
   border-radius: 10px;
   background: transparent;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px #00ff9f70;
 }
 
 .btn:hover {
@@ -107,6 +112,9 @@ nav a {
   transition: color 0.2s;
 }
 
+.text-neon {
+  text-shadow: 0 0 5px #00ff9f, 0 0 10px #00ff9f;
+}
 /* LIVE NOTIF */
 .notification {
   animation: glow 1.2s infinite alternate, fadeIn 0.5s ease forwards;
@@ -114,8 +122,9 @@ nav a {
   letter-spacing: 1px;
   padding: 10px;
   font-size: 0.9rem;
+  border: 1px solid #00ff9f;
+  backdrop-filter: blur(10px);
 }
-
 @keyframes glow {
   from { box-shadow:0 0 5px #00ff9f; }
   to { box-shadow:0 0 20px #00ff9f; }

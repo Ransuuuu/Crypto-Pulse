@@ -5,7 +5,7 @@ export default function Settings() {
 
   return (
     <div className="card text-center">
-      <h2 className="text-[#00ff9f] mb-4">Currency Settings</h2>
+      <h2 className="text-[#00ff9f] mb-4 text-neon">Currency Settings</h2>
 
       <select
         value={currency}

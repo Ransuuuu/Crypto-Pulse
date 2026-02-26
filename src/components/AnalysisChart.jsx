@@ -10,7 +10,7 @@ import {
 export default function AnalysisChart({ data }) {
   return (
     <div className="card">
-      <h2 className="text-[#00ff9f] text-center mb-4 text-xl">
+      <h2 className="text-[#00ff9f] text-center mb-4 text-xl text-neon">
         Comparative Crypto Analysis
       </h2>
       <ResponsiveContainer width="100%" height={300}>
