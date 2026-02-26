@@ -34,6 +34,12 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* CENTER APP */
@@ -103,7 +109,7 @@ nav a {
 
 /* LIVE NOTIF */
 .notification {
-  animation: glow 1.2s infinite alternate;
+  animation: glow 1.2s infinite alternate, fadeIn 0.5s ease forwards;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px;

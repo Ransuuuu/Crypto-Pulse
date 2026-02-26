@@ -26,10 +26,7 @@ export default function Navbar() {
           } sm:flex sm:items-center sm:gap-6 text-[#00ff9f]`}
         >
           <Link to="/" className="hover:underline" onClick={() => setOpen(false)}>
-            Market
-          </Link>
-          <Link to="/analysis" className="hover:underline" onClick={() => setOpen(false)}>
-            Analysis
+            Dashboard
           </Link>
           <Link to="/settings" className="hover:underline" onClick={() => setOpen(false)}>
             Settings
