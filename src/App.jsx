@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <Navbar />
         <LiveNotification />
-        <div className="pt-24">
+        <div>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/analysis" element={<Analysis />} />

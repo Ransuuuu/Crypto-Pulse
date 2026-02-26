@@ -4,10 +4,10 @@ export default function Settings() {
   const { currency, setCurrency } = useCrypto();
 
   return (
-    <div className="w-full max-w-4xl mx-auto space-y-8">
-      <div className="space-y-2">
-        <h1 className="text-4xl font-black text-neon">SETTINGS</h1>
-        <p className="text-[#00ff9f] opacity-70 text-lg">Customize your crypto dashboard</p>
+    <div className="w-full max-w-4xl mx-auto space-y-6 sm:space-y-8">
+      <div className="space-y-2 sm:space-y-3">
+        <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-neon tracking-[0.2em] uppercase" style={{letterSpacing: '0.25em', background: 'linear-gradient(135deg, #00ff9f 0%, #00d4ff 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text'}}>SETTINGS</h1>
+        <p className="text-[#00ff9f] opacity-50 text-xs sm:text-sm md:text-base tracking-widest uppercase">Customize your crypto dashboard</p>
       </div>
 
       <div className="card">
