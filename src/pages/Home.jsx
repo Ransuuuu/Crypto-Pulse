@@ -41,7 +41,7 @@ export default function Home() {
         {filtered.map((coin) => (
           <li
             key={coin.id}
-            className="flex justify-between bg-gray-100 p-2 rounded"
+            className="card flex justify-between items-center p-2"
           >
             <span>
               {coin.name} ({coin.symbol.toUpperCase()})
