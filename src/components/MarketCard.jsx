@@ -1,6 +1,14 @@
 export default function MarketCard({ coin }) {
   return (
     <div className="card flex flex-col items-center justify-center p-2 sm:p-3 hover:scale-110 transition-transform duration-300 w-full max-w-[240px] aspect-square">
+      {/* coin icon */}
+      {coin.image && (
+        <img
+          src={coin.image}
+          alt={coin.name}
+          className="w-10 h-10 mb-1 object-contain"
+        />
+      )}
       <h3 className="text-xs sm:text-sm font-bold text-[#00ff9f] mb-1 text-center line-clamp-2">
         {coin.name}
       </h3>

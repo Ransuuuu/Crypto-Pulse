@@ -50,6 +50,7 @@ export default function Analysis() {
           <table className="w-full text-left text-xs sm:text-sm">
             <thead>
               <tr className="border-b border-[#00ff9f] border-opacity-30">
+                <th className="px-2 sm:px-4 py-2 sm:py-3 font-bold text-[#00ff9f]"><span className="sr-only">Icon</span></th>
                 <th className="px-2 sm:px-4 py-2 sm:py-3 font-bold text-[#00ff9f]">Coin</th>
                 <th className="px-2 sm:px-4 py-2 sm:py-3 font-bold text-[#00ff9f]">Symbol</th>
                 <th className="px-2 sm:px-4 py-2 sm:py-3 font-bold text-[#00ff9f]">Price</th>
@@ -59,6 +60,11 @@ export default function Analysis() {
             <tbody>
               {crypto.map((coin) => (
                 <tr key={coin.id} className="border-b border-[#00ff9f] border-opacity-10 hover:bg-[#00ff9f] hover:bg-opacity-5 transition-colors">
+                  <td className="px-2 sm:px-4 py-2 sm:py-4">
+                    {coin.image && (
+                      <img src={coin.image} alt={coin.symbol} className="w-6 h-6 inline-block mr-2" />
+                    )}
+                  </td>
                   <td className="px-2 sm:px-4 py-2 sm:py-4 font-semibold text-xs sm:text-sm">{coin.name}</td>
                   <td className="px-2 sm:px-4 py-2 sm:py-4 uppercase text-xs opacity-70">{coin.symbol}</td>
                   <td className="px-2 sm:px-4 py-2 sm:py-4 font-mono text-xs sm:text-sm">${coin.current_price.toLocaleString()}</td>
