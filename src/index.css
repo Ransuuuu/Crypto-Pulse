@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+  .card {
+    padding: 16px;
+  }
+  .btn {
+    padding: 6px 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
   background: radial-gradient(circle at top, #020617, #000);
   color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* CENTER APP */
@@ -39,7 +58,8 @@ body {
 }
 
 .card:hover {
-  box-shadow: 0 0 20px #00ff9f55;
+  box-shadow: 0 0 30px #00ff9f88;
+  transform: translateY(-4px) scale(1.02);
 }
 
 /* BUTTON */
@@ -50,6 +70,7 @@ body {
   border-radius: 10px;
   background: transparent;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
 }
 
 .btn:hover {
@@ -68,9 +89,15 @@ body {
 .green { color:#00ff9f; }
 .red { color:#ff4d4d; }
 
+nav a {
+  transition: color 0.2s;
+}
+
 /* LIVE NOTIF */
 .notification {
   animation: glow 1.2s infinite alternate;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 @keyframes glow {

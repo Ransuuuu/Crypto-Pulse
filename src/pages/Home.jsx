@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-4">Top 10 Cryptocurrencies</h2>
+      <h2 className="text-2xl font-bold mb-4 text-[#00ff9f] drop-shadow-lg">Top 10 Cryptocurrencies</h2>
       <MarketChart />
       <input
         ref={searchRef}
@@ -41,7 +41,7 @@ export default function Home() {
         {filtered.map((coin) => (
           <li
             key={coin.id}
-            className="card flex justify-between items-center p-2"
+            className="card flex justify-between items-center p-2 w-full max-w-md mx-auto"
           >
             <span>
               {coin.name} ({coin.symbol.toUpperCase()})

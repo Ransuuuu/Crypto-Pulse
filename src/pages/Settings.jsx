@@ -10,7 +10,7 @@ export default function Settings() {
       <select
         value={currency}
         onChange={(e)=>setCurrency(e.target.value)}
-        className="btn"
+        className="btn w-full max-w-xs"
       >
         <option value="usd">USD</option>
         <option value="php">PHP (Peso)</option>
