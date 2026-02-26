@@ -129,3 +129,24 @@ nav a {
   from { box-shadow:0 0 5px #00ff9f; }
   to { box-shadow:0 0 20px #00ff9f; }
 }
+
+/* SEARCH INPUT */
+input[type="text"] {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+input[type="text"]:focus {
+  background: linear-gradient(135deg, rgba(0, 255, 159, 0.05), rgba(0, 255, 159, 0.02));
+}
+
+/* SELECT DROPDOWN */
+select {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 0.5px;
+}

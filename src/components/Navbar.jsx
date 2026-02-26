@@ -9,9 +9,9 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-[#0f172a]/80 backdrop-blur z-10 px-4 py-3">
       <div className="max-w-4xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Zap className="w-6 h-6 text-[#00ff9f] animate-pulse" />
-          <span className="text-[#00ff9f] text-2xl font-bold tracking-widest">
-            CRYPTO PULSE
+          <Zap className="w-7 h-7 text-[#00ff9f] animate-pulse" />
+          <span className="text-[#00ff9f] text-3xl font-black tracking-tighter" style={{textShadow: '0 0 20px rgba(0, 255, 159, 0.8)'}}>
+            ◆ CRYPTO PULSE ◆
           </span>
         </div>
         <button
