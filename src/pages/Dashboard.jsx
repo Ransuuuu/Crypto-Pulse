@@ -42,7 +42,7 @@ export default function Dashboard() {
               placeholder="Find your coin..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-2 sm:py-3 bg-gradient-to-r from-[#0a0e27] to-[#1a1f35] text-white text-sm sm:text-base rounded-lg border-2 border-[#00ff9f] border-opacity-30 focus:border-opacity-100 focus:outline-none focus:ring-2 focus:ring-[#00ff9f] focus:ring-opacity-50 transition-all duration-300 placeholder-gray-500 font-medium"
+              className="w-full pl-10 sm:pl-12 pr-3 sm:pr-4 py-2 sm:py-3 bg-gradient-to-r from-[#0a0e27] to-[#1a1f35] text-white text-sm sm:text-base rounded-lg border-2 border-[#00ff9f] border-opacity-30 focus:border-opacity-100 focus:outline-none focus:ring-2 focus:ring-[#00ff9f] focus:ring-opacity-50 transition-all duration-300 placeholder-white placeholder-opacity-50 font-medium"
             />
           </div>
           {query && (
